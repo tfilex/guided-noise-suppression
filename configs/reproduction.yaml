@@ -1,0 +1,6 @@
+# Reproduction paths for the released repository layout
+data_root: datasets/AIMD
+split_file: splits/fixed_splits.json
+weights_dir: weights
+results_dir: results
+paper_dir: paper

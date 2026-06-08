@@ -1,0 +1,33 @@
+\begin{table}[htbp]
+    \centering
+    \caption{Statistical variability of key denoising results on the test set. Metrics are reported as mean~$\pm$~standard deviation across test images. The $p$-values are computed with the paired Wilcoxon signed-rank test against the corresponding baseline.}
+    \label{tab:statistical_variability}
+    \small
+    \renewcommand{\arraystretch}{1.15}
+    \begin{tabular}{llccc}
+        \toprule
+        \textbf{Pre-filter} & \textbf{Method} & \textbf{PSNR Gain} & \textbf{SSIM Gain} & \textbf{$p$-value} \\
+        \midrule
+        None & Bare N2D & 4.769 $\pm$ 0.086 & 0.1823 $\pm$ 0.0008 & -- \\
+        None & Bare NAFNet Light & 4.836 $\pm$ 0.092 & 0.1841 $\pm$ 0.0010 & -- \\
+        PRBF & N2D Early Fusion & 5.062 $\pm$ 0.069 & 0.1840 $\pm$ 0.0007 & -- \\
+        PRBF & N2D Residual & 4.790 $\pm$ 0.088 & 0.1777 $\pm$ 0.0007 & -- \\
+        GGB & N2D Attention & 5.105 $\pm$ 0.083 & 0.1857 $\pm$ 0.0009 & -- \\
+        GGB & N2D SFT & 5.172 $\pm$ 0.081 & 0.1863 $\pm$ 0.0009 & $<0.001$ \\
+        AD Zhang & N2D Attention & 5.211 $\pm$ 0.069 & 0.1862 $\pm$ 0.0008 & -- \\
+        AD Zhang & N2D SFT & 5.130 $\pm$ 0.116 & 0.1864 $\pm$ 0.0010 & -- \\
+        PRBF & NAFNet Light Early Fusion & 5.462 $\pm$ 0.087 & 0.1900 $\pm$ 0.0009 & -- \\
+        PRBF & NAFNet Light Residual & 5.062 $\pm$ 0.098 & 0.1813 $\pm$ 0.0009 & -- \\
+        GGB & NAFNet Light Attention & 5.160 $\pm$ 0.096 & 0.1875 $\pm$ 0.0009 & -- \\
+        GGB & NAFNet Light SFT & 5.289 $\pm$ 0.092 & 0.1869 $\pm$ 0.0009 & -- \\
+        AD Zhang & NAFNet Light Attention & 5.397 $\pm$ 0.073 & 0.1890 $\pm$ 0.0009 & -- \\
+        AD Zhang & NAFNet Light SFT & 5.463 $\pm$ 0.093 & 0.1894 $\pm$ 0.0010 & $<0.001$ \\
+        Classical & BM3D & 4.753 $\pm$ 0.092 & 0.1808 $\pm$ 0.0011 & -- \\
+        Classical & Bilateral Classic & 4.474 $\pm$ 0.058 & 0.1725 $\pm$ 0.0008 & -- \\
+        Classical & PRBF Standalone & 0.525 $\pm$ 0.022 & 0.0257 $\pm$ 0.0002 & -- \\
+        Classical & GGB Standalone & 3.639 $\pm$ 0.037 & 0.1433 $\pm$ 0.0007 & -- \\
+        Classical & Aniso Zhang & 4.228 $\pm$ 0.059 & 0.1611 $\pm$ 0.0008 & -- \\
+        Classical & BM3D Improved & 3.596 $\pm$ 0.106 & 0.1669 $\pm$ 0.0011 & -- \\
+        \bottomrule
+    \end{tabular}
+\end{table}
