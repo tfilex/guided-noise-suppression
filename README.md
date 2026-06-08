@@ -4,13 +4,13 @@ This repository contains the code, checkpoints, paper sources, and reproducibili
 
 The study compares classical filtering, lightweight neural denoisers, and filter-guided hybrid cascades under Poisson-dominated non-stationary noise. Experiments are based on fluorescence microscopy images, with the robotics connection treated as a constrained sensing use case rather than a completed ROS/onboard deployment benchmark.
 
-![Filter-guided hybrid cascade architecture](paper/fig/fghc_architecture.png)
+![Filter-guided hybrid cascade architecture](fig/fghc_architecture.png)
 
 ## Short Summary
 
 The best reconstruction quality is obtained by the AD Zhang + NAFNet Light SFT configuration, while GGB + N2D SFT offers the strongest lightweight trade-off between quality and deployment cost. In the reported comparison, AD Zhang + NAFNet Light SFT reaches a PSNR gain of 5.46 dB and SSIM of 0.941, and GGB + N2D SFT reaches a PSNR gain of 5.32 dB, SSIM of 0.938, 10.6 FPS, and 79.4 MB VRAM.
 
-![Qualitative comparison from the paper](paper/fig/figure2_three_examples_variant_b.png)
+![Qualitative comparison from the paper](fig/figure2_three_examples_variant_b.png)
 
 ## Repository Layout
 
